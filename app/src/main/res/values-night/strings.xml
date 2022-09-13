@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="loginActivityHeading">Login UI-MAD Practical</string>
+    <string name="imageDescription">Logo of GUNI</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="forget_password_text">Forget Password ?</string>
+    <string name="loginBtnText">Login</string>
+    <string name="signup_message">Don\'t have an account?</string>
 </resources>
