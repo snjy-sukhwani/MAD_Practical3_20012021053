@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This file for Navigation Menu of The App -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- For Login Option -->
+    <item
+        android:id="@+id/bottom_nav_login"
+        android:title="@string/loginBtnText"
+        android:icon="@drawable/ic_baseline_login_24"
+        />
+
+    <!-- For Registration Option -->
+    <item
+        android:id="@+id/bottom_nav_registration"
+        android:title="Registration"
+        android:icon="@drawable/ic_baseline_how_to_reg_24"
+        />
+
+</menu>
