@@ -17,17 +17,10 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways|snap">
-
-            <!-- Heading Title TextView -->
-            <!--            <TextView-->
-            <!--                android:id="@+id/loginText"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:text="@string/loginActivityHeading"-->
-            <!--                android:textSize="25sp">-->
-
-            <!--            </TextView>-->
+            app:layout_scrollFlags="noScroll"
+            app:title="GUNI - HOME"
+            android:background="@android:color/transparent"
+            >
 
         </com.google.android.material.appbar.MaterialToolbar>
     </com.google.android.material.appbar.AppBarLayout>
