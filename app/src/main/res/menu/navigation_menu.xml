@@ -3,6 +3,13 @@
 <!-- This file for Navigation Menu of The App -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- For Home Option -->
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+
     <!-- For Login Option -->
     <item
         android:id="@+id/bottom_nav_login"
