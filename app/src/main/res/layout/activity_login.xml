@@ -16,17 +16,9 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways|snap">
-
-            <!-- Heading Title TextView -->
-<!--            <TextView-->
-<!--                android:id="@+id/loginText"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="@string/loginActivityHeading"-->
-<!--                android:textSize="25sp">-->
-
-<!--            </TextView>-->
+            app:layout_scrollFlags="noScroll"
+            app:title="@string/loginActivityHeading"
+            >
 
         </com.google.android.material.appbar.MaterialToolbar>
     </com.google.android.material.appbar.AppBarLayout>
@@ -46,7 +38,7 @@
             <!-- GUNI Logo Image -->
             <ImageView
 
-                android:id="@+id/guniImg"
+                android:id="@+id/guniLoginImg"
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,7 +52,9 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
 
-                app:layout_constraintHeight="80dp"
+                app:layout_constraintHeight="100dp"
+
+                android:scaleType="centerCrop"
 
                 />
 
@@ -69,17 +63,17 @@
 
                 android:id="@+id/LoginCard"
 
-                app:layout_constraintTop_toBottomOf="@id/guniImg"
+                app:layout_constraintTop_toBottomOf="@id/guniLoginImg"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
 
 
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
+                android:layout_height="250dp"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="15dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="10dp"
 
                 >
 
@@ -92,31 +86,32 @@
                     <!--Email EditText with Image Icon (Drawable) -->
                     <com.google.android.material.textfield.TextInputLayout
 
-                        android:id="@+id/emailTextLayout"
+                        android:id="@+id/loginUserTextLayout"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:layout_marginVertical="30dp"
-                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="20dp"
+                        android:layout_marginHorizontal="20dp"
 
-                        android:hint="@string/email_hint"
-
+                        android:hint="Username"
 
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintBottom_toTopOf="@id/passwordTextLayout"
+                        app:layout_constraintBottom_toTopOf="@id/loginPasswordTextLayout"
+
+                        app:startIconDrawable="@drawable/ic_baseline_person_24"
+                        app:startIconTint="@color/pink"
 
                         >
 
                         <com.google.android.material.textfield.TextInputEditText
 
-                            android:id="@+id/emailEditText"
+                            android:id="@+id/loginUserEditText"
 
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:drawableEnd="@drawable/ic_baseline_email_24"
                             />
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -124,30 +119,31 @@
                     <!--Password EditText with Image Icon (Drawable) -->
                     <com.google.android.material.textfield.TextInputLayout
 
-                        android:id="@+id/passwordTextLayout"
+                        android:id="@+id/loginPasswordTextLayout"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:layout_marginVertical="30dp"
-                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="20dp"
+                        android:layout_marginHorizontal="20dp"
 
-                        android:hint="@string/password_hint"
+                        android:hint="Password"
 
 
-                        app:layout_constraintTop_toBottomOf="@id/emailTextLayout"
+                        app:layout_constraintTop_toBottomOf="@id/loginUserTextLayout"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
 
+                        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+                        app:startIconTint="@color/pink"
                         >
 
                         <com.google.android.material.textfield.TextInputEditText
 
-                            android:id="@+id/passwordEditText"
+                            android:id="@+id/loginPasswordEditText"
 
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:drawableEnd="@drawable/ic_baseline_vpn_key_24"
                             />
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -169,7 +165,7 @@
 
                         android:textAlignment="textEnd"
 
-                        app:layout_constraintTop_toBottomOf="@id/passwordTextLayout"
+                        app:layout_constraintTop_toBottomOf="@id/loginPasswordTextLayout"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
 
@@ -180,7 +176,6 @@
             </com.google.android.material.card.MaterialCardView>
 
             <!-- Login Button -->
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 app:layout_constraintTop_toBottomOf="@id/LoginCard"
                 app:layout_constraintStart_toStartOf="parent"
@@ -199,6 +194,7 @@
                     android:textSize="20sp"
                     android:text="@string/loginBtnText" />
 
+                <!-- Signup Section-->
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -208,7 +204,7 @@
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
 
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="25dp"
 
                     >
 
@@ -252,13 +248,13 @@
 
                         android:textColor="@color/pink"
 
+
+
                         ></TextView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <!-- Signup Section-->
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -271,7 +267,7 @@
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+
         app:menu="@menu/navigation_menu"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
