@@ -10,4 +10,6 @@
 
     <!-- GUNI Logo Pink Color-->
     <color name="pink">#D93D91</color>
+
+    <color name="red">#FF0000</color>
 </resources>
