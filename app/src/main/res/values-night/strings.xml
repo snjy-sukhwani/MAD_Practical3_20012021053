@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="loginActivityHeading">Login UI-MAD Practical</string>
+    <string name="app_name">MAD_Practical3_20012021053</string>
+    <string name="loginActivityHeading">Login UI - 20012021053</string>
     <string name="imageDescription">Logo of GUNI</string>
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
     <string name="forget_password_text">Forget Password ?</string>
     <string name="loginBtnText">Login</string>
     <string name="signup_message">Don\'t have an account?</string>
+    <string name="signup_text">SIGN UP</string>
+    <string name="registerActivityHeading">Registration UI - 20012021053</string>
 </resources>
