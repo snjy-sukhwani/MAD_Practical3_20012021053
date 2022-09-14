@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_bg"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <!-- App title Bar of Activity -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="noScroll"
+            app:title="GUNI - Dashboard"
+            >
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main Part (Content) of Activity -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <!-- GUNI Name Text -->
+            <TextView
+
+                android:id="@+id/guniText"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+
+                android:text="Ganpat University"
+                android:textColor="@color/red"
+                android:textSize="45sp"
+
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                app:layout_constraintRight_toRightOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <TextView
+
+                android:id="@+id/userGreeting"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Welcome 👋"
+
+                app:layout_constraintTop_toBottomOf="@id/guniText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                android:textSize="35sp"
+
+                android:layout_marginHorizontal="15dp"
+
+                android:layout_marginTop="50dp"
+
+                android:textAlignment="center"
+
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+
+                android:id="@+id/dashboardMessage"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="We Will Update the Content Soon . . . "
+
+                app:layout_constraintTop_toBottomOf="@id/userGreeting"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                android:textSize="25sp"
+
+                android:textAlignment="center"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/DashboardBottomNavigationView"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:menu="@menu/dashboard_nav_menu"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
