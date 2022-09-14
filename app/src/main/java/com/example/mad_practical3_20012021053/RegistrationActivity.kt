@@ -3,6 +3,8 @@ package com.example.mad_practical3_20012021053
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
+import android.widget.Toast
 import androidx.core.view.WindowCompat
 
 import com.example.mad_practical3_20012021053.databinding.ActivityRegistrationBinding
@@ -20,7 +22,6 @@ class RegistrationActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
         binding.BottomNavigationView.selectedItemId = R.id.bottom_nav_registration
-
         binding.BottomNavigationView.setOnItemSelectedListener { it1 ->
             when (it1.itemId) {
                 R.id.bottom_nav_registration -> {
@@ -35,6 +36,18 @@ class RegistrationActivity : AppCompatActivity() {
                 }
             }
             return@setOnItemSelectedListener true
+        }
+
+        // Code for Login :
+        val signupText = findViewById<TextView>(R.id.login_link)
+        signupText.setOnClickListener {
+
+            // Testing !!
+            Toast.makeText(this,"Login Link is Clicked", Toast.LENGTH_LONG).show()
+
+            // Code for Opening the Login/Signin Activity
+            var loginScreen = Intent(this,LoginActivity::class.java)
+            startActivity(loginScreen)
         }
     }
 }
