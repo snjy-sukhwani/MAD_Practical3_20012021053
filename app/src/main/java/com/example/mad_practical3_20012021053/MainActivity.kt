@@ -3,6 +3,7 @@ package com.example.mad_practical3_20012021053
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.core.view.WindowCompat
 import com.example.mad_practical3_20012021053.databinding.ActivityMainBinding
@@ -18,25 +19,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
         setSupportActionBar (binding.toolbar)
 
-        binding.BottomNavigationView.id = R.id.bottom_nav_registration
-        binding.BottomNavigationView.setOnItemSelectedListener { it2 ->
-            when(it2.itemId) {
+        binding.BottomNavigationView.selectedItemId = R.id.bottom_nav_home
+
+
+//        binding.BottomNavigationView.id = R.id.bottom_nav_registration
+        binding.BottomNavigationView.setOnItemSelectedListener { it1 ->
+            when (it1.itemId) {
                 R.id.bottom_nav_registration -> {
                     Intent(this, RegistrationActivity::class.java).also { startActivity(it) }
                 }
-            }
-            return@setOnItemSelectedListener true
-        }
 
-        binding.BottomNavigationView.id = R.id.bottom_nav_login
-        binding.BottomNavigationView.setOnItemSelectedListener { it1 ->
-            when (it1.itemId) {
                 R.id.bottom_nav_login -> {
                     Intent(this, LoginActivity::class.java).also { startActivity(it) }
+                }
+                R.id.bottom_nav_home -> {
+                    Intent(this, MainActivity::class.java).also { startActivity(it) }
                 }
             }
             return@setOnItemSelectedListener true
