@@ -13,7 +13,6 @@ import com.google.android.material.appbar.MaterialToolbar
 
 class UserActivity : AppCompatActivity() {
 
-    //    lateinit var mTextView: TextView
     private lateinit var binding: ActivityUserBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,14 +31,5 @@ class UserActivity : AppCompatActivity() {
             }
             return@setOnItemSelectedListener true
         }
-
-    //
-//        mTextView = findViewById(R.id.userGreeting)
-//
-//        val loginUsername = intent
-//            var user:String? = intent.getStringExtra("Username")
-//
-//        mTextView.text = user
-
     }
 }
