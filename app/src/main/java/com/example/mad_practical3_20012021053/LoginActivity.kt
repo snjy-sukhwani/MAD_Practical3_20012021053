@@ -58,17 +58,24 @@ class LoginActivity : AppCompatActivity() {
         mEditText = findViewById(R.id.loginUserEditText)
 
         val loginBtnClicked = findViewById<Button>(R.id.btnLogin)
-        val username = mEditText.text.toString()
-        val password = findViewById<EditText>(R.id.loginPasswordEditText).text.toString()
 
         loginBtnClicked.setOnClickListener {
+
+            val username = mEditText.text.toString()
+            val password = findViewById<EditText>(R.id.loginPasswordEditText).text.toString()
+
             // Testing
-            if (username==password){
+            if (username=="Admin" && password=="Admin@Sanjay"){
                 Toast.makeText(this,"Login Successfully !!",Toast.LENGTH_LONG).show()
 
-                var loginedUserScreen = Intent(this,UserActivity::class.java)
-//                loginedUserScreen.putExtra("Username",username)
-                startActivity(loginedUserScreen)
+                var loginedSuccessUserScreen = Intent(this,UserActivity::class.java)
+                startActivity(loginedSuccessUserScreen)
+            }
+            else{
+                Toast.makeText(this,"Login Failed !!",Toast.LENGTH_LONG).show()
+
+                var loginedFailedUserScreen = Intent(this,LoginActivity::class.java)
+                startActivity(loginedFailedUserScreen)
             }
         }
 
