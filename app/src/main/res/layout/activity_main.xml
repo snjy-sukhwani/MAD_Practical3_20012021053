@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:text="Ganpat University"
+                android:text="@string/GUNIText"
 
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/ganpatIcon"
@@ -100,7 +100,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
 
-                android:text="Ganpat University is a Private University Situated in the Mehsana District of Gujarat, India.\n\nEstablished in 2005, it is spread over 300 acres of land and has around 15,000 students so far.\n\nThe University offers a wide range of courses at UG and PG level in the fields of Social Science, Humanities, Educations, Science, Computer Application, Management, Pharmacy, Technology and Engineering."
+                android:text="@string/GUNIDescription"
 
                 android:textColor="@color/black"
                 android:textSize="17sp"

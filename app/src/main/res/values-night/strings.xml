@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MAD_Practical3_20012021053</string>
-    <string name="loginActivityHeading">Login UI - 20012021053</string>
+    <string name="loginActivityHeading"><b>Login UI - 20012021053</b></string>
     <string name="imageDescription">Logo of GUNI</string>
-    <string name="email_hint">Email</string>
-    <string name="password_hint">Password</string>
+    <string name="emailText">Email</string>
+    <string name="passwordText">Password</string>
     <string name="forget_password_text">Forget Password ?</string>
-    <string name="loginBtnText">Login</string>
-    <string name="signup_message">Don\'t have an account?</string>
-    <string name="signup_text">SIGN UP</string>
-    <string name="registerActivityHeading">Registration UI - 20012021053</string>
+    <string name="loginText">Login</string>
+    <string name="signupMsg">Don\'t have an account?</string>
+    <string name="signupText">Sign Up</string>
+    <string name="registerActivityHeading"><b>Registration UI - 20012021053</b></string>
+    <string name="usernameText">Username</string>
+    <string name="GUNIText">Ganpat University</string>
+    <string name="GUNIDescription">Ganpat University is a Private University Situated in the Mehsana District of Gujarat, India.\n\nEstablished in 2005, it is spread over 300 acres of land and has around 15,000 students so far.\n\nThe University offers a wide range of courses at UG and PG level in the fields of Social Science, Humanities, Educations, Science, Computer Application, Management, Pharmacy, Technology and Engineering.</string>
+    <string name="phoneNumberText">Phone Number</string>
+    <string name="cityText">City</string>
+    <string name="confirmPasswordText">Confirm Password</string>
+    <string name="registerText">Register</string>
+    <string name="loginMsg">Already Have an Account ?</string>
+    <string name="logoutText">Logout</string>
+    <string name="homeText">Home</string>
+    <string name="registrationText">Registration</string>
+    <string name="userActivityHeading">GUNI - Dashboard</string>
+    <string name="greetMsg">Welcome 👋</string>
+    <string name="MsgToUser">We Will Update the Content Soon</string>
 </resources>

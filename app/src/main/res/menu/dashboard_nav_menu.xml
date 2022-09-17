@@ -4,7 +4,7 @@
 <!-- For Login Option -->
 <item
     android:id="@+id/bottom_nav_logout"
-    android:title="Logout"
+    android:title="@string/logoutText"
     android:icon="@drawable/ic_baseline_login_24"
     />
 

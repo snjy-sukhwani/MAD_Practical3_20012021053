@@ -94,7 +94,7 @@
                         android:layout_marginVertical="20dp"
                         android:layout_marginHorizontal="20dp"
 
-                        android:hint="Username"
+                        android:hint="@string/usernameText"
 
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
@@ -127,7 +127,7 @@
                         android:layout_marginVertical="20dp"
                         android:layout_marginHorizontal="20dp"
 
-                        android:hint="Password"
+                        android:hint="@string/passwordText"
 
 
                         app:layout_constraintTop_toBottomOf="@id/loginUserTextLayout"
@@ -192,7 +192,7 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:text="@string/loginBtnText" />
+                    android:text="@string/loginText" />
 
                 <!-- Signup Section-->
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -215,7 +215,7 @@
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/signup_message"
+                        android:text="@string/signupMsg"
 
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toLeftOf="@id/signup_link"
@@ -224,9 +224,9 @@
                         android:textSize="20sp"
                         android:textStyle="bold"
 
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
 
-                        ></TextView>
+                        />
 
                     <!-- Message for Sign UP Option -->
                     <TextView
@@ -235,7 +235,9 @@
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/signup_text"
+                        android:text="@string/signupText"
+
+                        android:textAllCaps="true"
 
                         app:layout_constraintLeft_toRightOf="@id/signup_msg"
                         app:layout_constraintRight_toRightOf="parent"
@@ -244,13 +246,12 @@
                         android:textSize="20sp"
                         android:textStyle="bold"
 
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
                         android:textColor="@color/pink"
 
 
-
-                        ></TextView>
+                        />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
