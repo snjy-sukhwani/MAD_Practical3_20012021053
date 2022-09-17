@@ -13,8 +13,6 @@ import com.example.mad_practical3_20012021053.databinding.ActivityLoginBinding
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 
-    lateinit var mEditText: EditText
-
     override fun onCreate(savedInstanceState: Bundle?) {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
@@ -54,14 +52,11 @@ class LoginActivity : AppCompatActivity() {
         }
 
         // Code for Checking Username & Password :
-
-        mEditText = findViewById(R.id.loginUserEditText)
-
         val loginBtnClicked = findViewById<Button>(R.id.btnLogin)
 
         loginBtnClicked.setOnClickListener {
 
-            val username = mEditText.text.toString()
+            val username = findViewById<EditText>(R.id.loginUserEditText).text.toString()
             val password = findViewById<EditText>(R.id.loginPasswordEditText).text.toString()
 
             // Testing
@@ -70,6 +65,12 @@ class LoginActivity : AppCompatActivity() {
 
                 var loginedSuccessUserScreen = Intent(this,UserActivity::class.java)
                 startActivity(loginedSuccessUserScreen)
+            }
+            else if(username=="" && password==""){
+                Toast.makeText(this,"Please Fill out the Fields !!",Toast.LENGTH_LONG).show()
+
+                var loginedFailedUserScreen = Intent(this,LoginActivity::class.java)
+                startActivity(loginedFailedUserScreen)
             }
             else{
                 Toast.makeText(this,"Login Failed !!",Toast.LENGTH_LONG).show()
