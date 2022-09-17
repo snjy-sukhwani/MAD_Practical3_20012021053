@@ -68,7 +68,7 @@
                     <!-- User Name EditText with Image Icon (Drawable) -->
                     <com.google.android.material.textfield.TextInputLayout
 
-                        android:id="@+id/usernameTextLayout"
+                        android:id="@+id/regusernameTextLayout"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
 
                         <com.google.android.material.textfield.TextInputEditText
 
-                            android:id="@+id/usernameEditText"
+                            android:id="@+id/regUsernameEditText"
 
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
                     <!-- Phone Number -->
                     <com.google.android.material.textfield.TextInputLayout
 
-                        android:id="@+id/phoneTextLayout"
+                        android:id="@+id/regphoneTextLayout"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
 
                         <com.google.android.material.textfield.TextInputEditText
 
-                            android:id="@+id/phoneEditText"
+                            android:id="@+id/regPhoneEditText"
 
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
                     <!-- City -->
                     <com.google.android.material.textfield.TextInputLayout
 
-                        android:id="@+id/cityTextLayout"
+                        android:id="@+id/regcityTextLayout"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
 
                         <com.google.android.material.textfield.TextInputEditText
 
-                            android:id="@+id/cityEditText"
+                            android:id="@+id/regCityEditText"
 
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                     <!--Email EditText with Image Icon (Drawable) -->
                     <com.google.android.material.textfield.TextInputLayout
 
-                        android:id="@+id/emailTextLayout"
+                        android:id="@+id/regemailTextLayout"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
 
                         <com.google.android.material.textfield.TextInputEditText
 
-                            android:id="@+id/emailEditText"
+                            android:id="@+id/regEmailEditText"
 
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -212,7 +212,7 @@
                     <!-- Confirm password -->
                     <com.google.android.material.textfield.TextInputLayout
 
-                        android:id="@+id/confirmpasswordTextLayout"
+                        android:id="@+id/regconfirmpasswordTextLayout"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -229,7 +229,7 @@
 
                         <com.google.android.material.textfield.TextInputEditText
 
-                            android:id="@+id/confirmpasswordEditText"
+                            android:id="@+id/regconfirmpasswordEditText"
 
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -250,7 +250,7 @@
                 android:layout_gravity="center"
                 >
                 <Button
-                    android:id="@+id/btnLogin"
+                    android:id="@+id/btnRegister"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
