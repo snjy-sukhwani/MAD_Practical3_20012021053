@@ -3,13 +3,8 @@ package com.example.mad_practical3_20012021053
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import android.widget.Toast
 import androidx.core.view.WindowCompat
-import com.example.mad_practical3_20012021053.databinding.ActivityLoginBinding
 import com.example.mad_practical3_20012021053.databinding.ActivityUserBinding
-import com.google.android.material.appbar.AppBarLayout
-import com.google.android.material.appbar.MaterialToolbar
 
 class UserActivity : AppCompatActivity() {
 

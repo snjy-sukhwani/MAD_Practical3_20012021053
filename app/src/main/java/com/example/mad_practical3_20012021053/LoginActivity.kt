@@ -47,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this,"Signup Link is Clicked",Toast.LENGTH_LONG).show()
 
             // Code for Opening the Registration/Signup Activity
-            var signupScreen = Intent(this,RegistrationActivity::class.java)
+            val signupScreen = Intent(this,RegistrationActivity::class.java)
             startActivity(signupScreen)
         }
 
@@ -63,19 +63,19 @@ class LoginActivity : AppCompatActivity() {
             if (username=="Admin" && password=="Admin@Sanjay"){
                 Toast.makeText(this,"Login Successfully !!",Toast.LENGTH_LONG).show()
 
-                var loginedSuccessUserScreen = Intent(this,UserActivity::class.java)
+                val loginedSuccessUserScreen = Intent(this,UserActivity::class.java)
                 startActivity(loginedSuccessUserScreen)
             }
             else if(username=="" && password==""){
                 Toast.makeText(this,"Please Fill out the Fields !!",Toast.LENGTH_LONG).show()
 
-                var loginedFailedUserScreen = Intent(this,LoginActivity::class.java)
+                val loginedFailedUserScreen = Intent(this,LoginActivity::class.java)
                 startActivity(loginedFailedUserScreen)
             }
             else{
                 Toast.makeText(this,"Login Failed !!",Toast.LENGTH_LONG).show()
 
-                var loginedFailedUserScreen = Intent(this,LoginActivity::class.java)
+                val loginedFailedUserScreen = Intent(this,LoginActivity::class.java)
                 startActivity(loginedFailedUserScreen)
             }
         }

@@ -3,8 +3,6 @@ package com.example.mad_practical3_20012021053
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.Toast
 import androidx.core.view.WindowCompat
 import com.example.mad_practical3_20012021053.databinding.ActivityMainBinding
 
