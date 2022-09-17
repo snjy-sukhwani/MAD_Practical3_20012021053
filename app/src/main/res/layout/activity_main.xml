@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:layout_scrollFlags="noScroll"
-            app:title="GUNI - HOME"
+            app:title="@string/mainActivityHeading"
             android:background="@android:color/transparent"
             >
 

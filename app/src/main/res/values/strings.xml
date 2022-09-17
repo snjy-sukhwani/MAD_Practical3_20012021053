@@ -20,7 +20,8 @@
     <string name="logoutText">Logout</string>
     <string name="homeText">Home</string>
     <string name="registrationText">Registration</string>
-    <string name="userActivityHeading">GUNI - Dashboard</string>
+    <string name="userActivityHeading"><b>GUNI - Dashboard</b></string>
     <string name="greetMsg">Welcome 👋</string>
     <string name="MsgToUser">We Will Update the Content Soon</string>
+    <string name="mainActivityHeading"><b>GUNI - HOME</b></string>
 </resources>
