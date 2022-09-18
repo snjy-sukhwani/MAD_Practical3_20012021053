@@ -17,8 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:layout_scrollFlags="noScroll"
-            app:title="@string/registerActivityHeading"
-            >
+            app:title="@string/registerActivityHeading">
 
         </com.google.android.material.appbar.MaterialToolbar>
 
@@ -30,10 +29,11 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="80dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             <!-- GUNI Logo Image -->
@@ -45,25 +45,25 @@
                 android:layout_height="100dp"
 
                 android:contentDescription="@string/imageDescription"
-                android:src="@drawable/guni_logo"
-
                 android:scaleType="centerCrop"
+
+                android:src="@drawable/guni_logo"
 
                 />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="10dp"
-                app:cardCornerRadius="15dp"
-                android:layout_marginTop="30dp"
                 android:layout_marginHorizontal="10dp"
-                >
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp">
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_behavior = "@string/hide_bottom_view_on_scroll_behavior">
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior">
 
                     <!-- User Name EditText with Image Icon (Drawable) -->
                     <com.google.android.material.textfield.TextInputLayout
@@ -73,8 +73,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:layout_marginTop="20dp"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
 
                         android:hint="@string/usernameText"
 
@@ -88,8 +88,7 @@
                             android:id="@+id/regUsernameEditText"
 
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            />
+                            android:layout_height="wrap_content" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -101,8 +100,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:layout_marginTop="20dp"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
 
                         android:hint="@string/phoneNumberText"
 
@@ -116,8 +115,7 @@
                             android:id="@+id/regPhoneEditText"
 
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            />
+                            android:layout_height="wrap_content" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -129,8 +127,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:layout_marginTop="20dp"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
 
                         android:hint="@string/cityText"
 
@@ -144,8 +142,7 @@
                             android:id="@+id/regCityEditText"
 
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            />
+                            android:layout_height="wrap_content" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -157,15 +154,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:layout_marginTop="20dp"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
 
                         android:hint="@string/emailText"
 
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/regPasswordTextLayout"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintBottom_toTopOf="@id/regPasswordTextLayout"
+                        app:layout_constraintTop_toTopOf="parent"
 
                         app:startIconDrawable="@drawable/ic_baseline_email_24"
                         app:startIconTint="@color/pink"
@@ -177,8 +174,7 @@
                             android:id="@+id/regEmailEditText"
 
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            />
+                            android:layout_height="wrap_content" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -190,22 +186,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:layout_marginTop="20dp"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
 
                         android:hint="@string/passwordText"
 
                         app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
-                        app:startIconTint="@color/pink"
-                        >
+                        app:startIconTint="@color/pink">
 
                         <com.google.android.material.textfield.TextInputEditText
 
                             android:id="@+id/regPasswordEditText"
 
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            />
+                            android:layout_height="wrap_content" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -217,23 +211,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:layout_marginTop="20dp"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginBottom="50dp"
 
                         android:hint="@string/confirmPasswordText"
 
                         app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
-                        app:startIconTint="@color/pink"
-                        >
+                        app:startIconTint="@color/pink">
 
                         <com.google.android.material.textfield.TextInputEditText
 
                             android:id="@+id/regconfirmpasswordEditText"
 
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            />
+                            android:layout_height="wrap_content" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -243,20 +235,19 @@
 
             <!-- Login Button -->
             <LinearLayout
-                android:elevation="25dp"
-                android:layout_marginTop="-25dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                >
+                android:layout_marginTop="-25dp"
+                android:elevation="25dp">
+
                 <Button
                     android:id="@+id/btnRegister"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/registerText"
                     android:layout_gravity="center"
-                    />
+                    android:text="@string/registerText"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <!-- Signup Section-->
@@ -264,10 +255,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="25dp"
-
                 android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+
+                android:layout_marginBottom="25dp"
                 android:gravity="center"
 
                 >
@@ -279,12 +270,12 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/loginMsg"
-
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-
                     android:layout_marginEnd="10dp"
+
+                    android:text="@string/loginMsg"
+                    android:textSize="20sp"
+
+                    android:textStyle="bold"
 
                     />
 
@@ -295,17 +286,17 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+
                     android:text="@string/loginText"
 
                     android:textAllCaps="true"
+                    android:textColor="@color/pink"
+
 
                     android:textSize="20sp"
+
                     android:textStyle="bold"
-
-
-                    android:layout_marginStart="10dp"
-
-                    android:textColor="@color/pink"
 
                     />
 
@@ -318,10 +309,10 @@
     <!-- Bottom Navigation Bar -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/BottomNavigationView"
-        android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
 
-        app:menu="@menu/navigation_menu"/>
+        app:menu="@menu/navigation_menu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
