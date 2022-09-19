@@ -83,20 +83,17 @@ class RegistrationActivity : AppCompatActivity() {
                 startActivity(passwordMatchError)
             }
 
+            else if(!phone.isDigitsOnly()){
+                Toast.makeText(this,"Registration Failed!!\nPhone Number should contain digits Only",Toast.LENGTH_LONG).show()
+
+                val phoneNotHavingDigits = Intent(this,RegistrationActivity::class.java)
+                startActivity(phoneNotHavingDigits)
+            }
+
             else if(phone.length != 10){
-
-                if(!phone.isDigitsOnly()){
-                    Toast.makeText(this,"Registration Failed!!\nPhone Number should contain digits Only",Toast.LENGTH_LONG).show()
-
-                    val phoneNotHavingDigits = Intent(this,RegistrationActivity::class.java)
-                    startActivity(phoneNotHavingDigits)
-                }
-                else {
-                    Toast.makeText(this,"Registration Failed!!\nPhone Number should have 10 digits Only",Toast.LENGTH_LONG).show()
-
-                    val phoneLengthError = Intent(this, RegistrationActivity::class.java)
-                    startActivity(phoneLengthError)
-                }
+                Toast.makeText(this,"Registration Failed!!\nPhone Number should have 10 digits Only",Toast.LENGTH_LONG).show()
+                val phoneLengthError = Intent(this, RegistrationActivity::class.java)
+                startActivity(phoneLengthError)
             }
 
             else{
