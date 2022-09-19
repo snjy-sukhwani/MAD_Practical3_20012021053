@@ -23,8 +23,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.BottomNavigationView.selectedItemId = R.id.bottom_nav_home
 
-
-//        binding.BottomNavigationView.id = R.id.bottom_nav_registration
         binding.BottomNavigationView.setOnItemSelectedListener { it1 ->
             when (it1.itemId) {
                 R.id.bottom_nav_registration -> {
